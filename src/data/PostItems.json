@@ -1,0 +1,10 @@
+[
+	{
+		"label" : "First",
+		"link" : "../images/1.jpg"
+	},
+	{
+		"label" : "Second",
+		"link" : "../images/2.jpg"
+	}
+]

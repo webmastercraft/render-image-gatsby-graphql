@@ -2,6 +2,8 @@ import React from "react"
 import Layout from "../components/layout"
 import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
+import StaticImg from "../components/static";
+import PostList from "../components/dynamic";
 
 export default function Home({ data }) {
   const desc = data.site.siteMetadata;
@@ -19,6 +21,10 @@ export default function Home({ data }) {
         <meta property="og:url" content={desc.url} />
       </Helmet>
       <main>
+      <h2>Static Image</h2>
+        <StaticImg />
+        <h2>Dynamic Image with GraphQL</h2>
+        <PostList/>
         <h1>Komplexní finanční poradenství</h1>
         <div>dělat věci správně se vyplácí</div>
         <h2>
